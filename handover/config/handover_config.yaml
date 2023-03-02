@@ -1,0 +1,64 @@
+train:
+  num_objects: 198
+  obj_path: "./pre_dataset/train_dataset/lm/models"
+  label_path: "./pre_dataset/grasp_dataset"
+  data_out_path: "./dataset/train/data"
+  label_out_path: "./dataset/train/label"
+
+test:
+  num_objects: 19
+  obj_path: "./pre_dataset/test_dataset/lm/models"
+  label_path: "./pre_dataset/grasp_dataset"
+  data_out_path: "./dataset/test/data"
+  label_out_path: "./dataset/test/label"
+
+dataset:
+  num_points: 512
+  farthest_points: 16
+  crop_radius: [ 0.02, 0.03, 0.04, 0.05 ]
+  grasp_radius: 0.002
+  label_path: "./pre_dataset/grasp_dataset"
+
+color:
+  plannar: [ 150,150,150 ]
+  object: [ 255,215,0 ]
+  pointcloud: [ 0,255,0 ]
+  grasp_point: [ 255,0,0 ]
+  hand_mesh: [ 255,255,0, 120 ]
+  Parallel_Extension: [ 254,67,101, 180 ]  # magenta
+  Pen_Pinch: [ 252,157,154, 180 ]  # pink
+  Palmar_Pinch: [ 200,200,169, 180 ]  # grey yellow
+  Precision_Sphere: [ 38,188,213, 180 ]  # blue
+  Large_Wrap: [ 131,175,155, 180 ]  # grey green
+
+network:
+  train:
+    num_images: 20000
+    num_points: 256
+    num_taxonomies: 5
+    use_norm_points: True
+    gp_weight: [ 1, 10 ]
+    batchsize: 8
+    workers: 1
+    epochs: 80
+    gpu: "0"
+    learning_rate: 0.0001
+    optimizer: "Adam"
+    theme: "train"
+    printfreq: 50
+  eval:
+    dist_thresh: 0.05
+    angle_thresh: 30
+    quat_thresh: 60
+    #    model_path: "experiment/20220704_174134_quat_loss8/checkpoints"
+    model_path: '/home/haonan/codes/handover/DLR-Handover/experiment/20220308_201539_quat_loss8/checkpoints/'
+  test:
+    num_images: 2000
+
+mujoco:
+  topK: 5
+
+index:
+  train: 16000
+  val: 4000
+  test: 2000

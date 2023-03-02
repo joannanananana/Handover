@@ -1,0 +1,1 @@
+Namespace(batchsize=1, epoch=80, gpu='0', learning_rate=0.0001, optimizer='Adam', workers=1)
