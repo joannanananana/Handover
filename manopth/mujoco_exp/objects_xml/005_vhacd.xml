@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<mujoco model="005_vhacd">
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <size nconmax="100" njmax="500"/>
+    <asset>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_9.stl"
+              name="005_vhacdcvx_9"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_14.stl"
+              name="005_vhacdcvx_14"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_4.stl"
+              name="005_vhacdcvx_4"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_20.stl"
+              name="005_vhacdcvx_20"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_26.stl"
+              name="005_vhacdcvx_26"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_3.stl"
+              name="005_vhacdcvx_3"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_2.stl"
+              name="005_vhacdcvx_2"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_6.stl"
+              name="005_vhacdcvx_6"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_18.stl"
+              name="005_vhacdcvx_18"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_13.stl"
+              name="005_vhacdcvx_13"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_10.stl"
+              name="005_vhacdcvx_10"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_17.stl"
+              name="005_vhacdcvx_17"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_11.stl"
+              name="005_vhacdcvx_11"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_0.stl"
+              name="005_vhacdcvx_0"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_8.stl"
+              name="005_vhacdcvx_8"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_12.stl"
+              name="005_vhacdcvx_12"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_5.stl"
+              name="005_vhacdcvx_5"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_15.stl"
+              name="005_vhacdcvx_15"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_22.stl"
+              name="005_vhacdcvx_22"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_25.stl"
+              name="005_vhacdcvx_25"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_23.stl"
+              name="005_vhacdcvx_23"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_7.stl"
+              name="005_vhacdcvx_7"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_24.stl"
+              name="005_vhacdcvx_24"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_19.stl"
+              name="005_vhacdcvx_19"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_16.stl"
+              name="005_vhacdcvx_16"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_1.stl"
+              name="005_vhacdcvx_1"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/005_vhacd/005_vhacdcvx_21.stl"
+              name="005_vhacdcvx_21"/>
+    </asset>
+    <worldbody>
+        <body euler="0 0 0" name="005_vhacd" pos="0 0 0 ">
+            <joint name="005_vhacd_joint" type="free"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_9" name="005_vhacdcvx_9"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_14" name="005_vhacdcvx_14"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_4" name="005_vhacdcvx_4"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_20" name="005_vhacdcvx_20"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_26" name="005_vhacdcvx_26"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_3" name="005_vhacdcvx_3"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_2" name="005_vhacdcvx_2"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_6" name="005_vhacdcvx_6"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_18" name="005_vhacdcvx_18"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_13" name="005_vhacdcvx_13"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_10" name="005_vhacdcvx_10"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_17" name="005_vhacdcvx_17"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_11" name="005_vhacdcvx_11"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_0" name="005_vhacdcvx_0"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_8" name="005_vhacdcvx_8"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_12" name="005_vhacdcvx_12"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_5" name="005_vhacdcvx_5"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_15" name="005_vhacdcvx_15"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_22" name="005_vhacdcvx_22"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_25" name="005_vhacdcvx_25"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_23" name="005_vhacdcvx_23"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_7" name="005_vhacdcvx_7"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_24" name="005_vhacdcvx_24"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_19" name="005_vhacdcvx_19"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_16" name="005_vhacdcvx_16"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_1" name="005_vhacdcvx_1"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="005_vhacdcvx_21" name="005_vhacdcvx_21"
+                  type="mesh"/>
+        </body>
+    </worldbody>
+</mujoco>

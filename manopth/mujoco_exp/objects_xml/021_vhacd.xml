@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<mujoco model="021_vhacd">
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <size nconmax="100" njmax="500"/>
+    <asset>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/021_vhacd/021_vhacdcvx_0.stl"
+              name="021_vhacdcvx_0"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/021_vhacd/021_vhacdcvx_3.stl"
+              name="021_vhacdcvx_3"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/021_vhacd/021_vhacdcvx_1.stl"
+              name="021_vhacdcvx_1"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/021_vhacd/021_vhacdcvx_4.stl"
+              name="021_vhacdcvx_4"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/021_vhacd/021_vhacdcvx_2.stl"
+              name="021_vhacdcvx_2"/>
+    </asset>
+    <worldbody>
+        <body euler="0 0 0" name="021_vhacd" pos="0 0 0 ">
+            <joint name="021_vhacd_joint" type="free"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="021_vhacdcvx_0" name="021_vhacdcvx_0"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="021_vhacdcvx_3" name="021_vhacdcvx_3"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="021_vhacdcvx_1" name="021_vhacdcvx_1"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="021_vhacdcvx_4" name="021_vhacdcvx_4"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="021_vhacdcvx_2" name="021_vhacdcvx_2"
+                  type="mesh"/>
+        </body>
+    </worldbody>
+</mujoco>

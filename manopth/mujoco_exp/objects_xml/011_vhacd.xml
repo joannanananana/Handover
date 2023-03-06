@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<mujoco model="011_vhacd">
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <size nconmax="100" njmax="500"/>
+    <asset>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/011_vhacd/011_vhacdcvx_5.stl"
+              name="011_vhacdcvx_5"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/011_vhacd/011_vhacdcvx_3.stl"
+              name="011_vhacdcvx_3"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/011_vhacd/011_vhacdcvx_4.stl"
+              name="011_vhacdcvx_4"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/011_vhacd/011_vhacdcvx_1.stl"
+              name="011_vhacdcvx_1"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/011_vhacd/011_vhacdcvx_0.stl"
+              name="011_vhacdcvx_0"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/011_vhacd/011_vhacdcvx_2.stl"
+              name="011_vhacdcvx_2"/>
+    </asset>
+    <worldbody>
+        <body euler="0 0 0" name="011_vhacd" pos="0 0 0 ">
+            <joint name="011_vhacd_joint" type="free"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="011_vhacdcvx_5" name="011_vhacdcvx_5"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="011_vhacdcvx_3" name="011_vhacdcvx_3"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="011_vhacdcvx_4" name="011_vhacdcvx_4"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="011_vhacdcvx_1" name="011_vhacdcvx_1"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="011_vhacdcvx_0" name="011_vhacdcvx_0"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="011_vhacdcvx_2" name="011_vhacdcvx_2"
+                  type="mesh"/>
+        </body>
+    </worldbody>
+</mujoco>

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<mujoco model="035_vhacd">
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <size nconmax="100" njmax="500"/>
+    <asset>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_6.stl"
+              name="035_vhacdcvx_6"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_4.stl"
+              name="035_vhacdcvx_4"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_5.stl"
+              name="035_vhacdcvx_5"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_12.stl"
+              name="035_vhacdcvx_12"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_3.stl"
+              name="035_vhacdcvx_3"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_0.stl"
+              name="035_vhacdcvx_0"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_11.stl"
+              name="035_vhacdcvx_11"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_1.stl"
+              name="035_vhacdcvx_1"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_8.stl"
+              name="035_vhacdcvx_8"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_9.stl"
+              name="035_vhacdcvx_9"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_7.stl"
+              name="035_vhacdcvx_7"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_2.stl"
+              name="035_vhacdcvx_2"/>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/035_vhacd/035_vhacdcvx_10.stl"
+              name="035_vhacdcvx_10"/>
+    </asset>
+    <worldbody>
+        <body euler="0 0 0" name="035_vhacd" pos="0 0 0 ">
+            <joint name="035_vhacd_joint" type="free"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_6" name="035_vhacdcvx_6"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_4" name="035_vhacdcvx_4"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_5" name="035_vhacdcvx_5"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_12" name="035_vhacdcvx_12"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_3" name="035_vhacdcvx_3"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_0" name="035_vhacdcvx_0"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_11" name="035_vhacdcvx_11"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_1" name="035_vhacdcvx_1"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_8" name="035_vhacdcvx_8"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_9" name="035_vhacdcvx_9"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_7" name="035_vhacdcvx_7"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_2" name="035_vhacdcvx_2"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="035_vhacdcvx_10" name="035_vhacdcvx_10"
+                  type="mesh"/>
+        </body>
+    </worldbody>
+</mujoco>

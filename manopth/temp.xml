@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<mujoco model="006_vhacd">
+
+
+    <compiler angle="radian" meshdir="" texturedir=""/>
+
+
+    <size nconmax="100" njmax="500"/>
+
+
+    <asset>
+
+
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/006_vhacd/006_vhacdcvx_4.stl"
+              name="006_vhacdcvx_4"/>
+
+
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/006_vhacd/006_vhacdcvx_1.stl"
+              name="006_vhacdcvx_1"/>
+
+
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/006_vhacd/006_vhacdcvx_5.stl"
+              name="006_vhacdcvx_5"/>
+
+
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/006_vhacd/006_vhacdcvx_2.stl"
+              name="006_vhacdcvx_2"/>
+
+
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/006_vhacd/006_vhacdcvx_0.stl"
+              name="006_vhacdcvx_0"/>
+
+
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/006_vhacd/006_vhacdcvx_3.stl"
+              name="006_vhacdcvx_3"/>
+
+
+        <mesh file="mujoco_exp/objects/006.stl" name="006_stl"/>
+        <mesh file="mano.stl" name="hand"/>
+    </asset>
+
+
+    <worldbody>
+
+
+        <body euler="2.337083448178966 0.1192081753732851 1.3742893712744997" name="006_vhacd"
+              pos="0.17162136733531952 -0.08380328118801117 0.7884912490844727">
+
+
+            <joint name="006_vhacd_joint" type="free"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="3" mesh="006_vhacdcvx_4" name="006_vhacdcvx_4"
+                  type="mesh"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="3" mesh="006_vhacdcvx_1" name="006_vhacdcvx_1"
+                  type="mesh"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="3" mesh="006_vhacdcvx_5" name="006_vhacdcvx_5"
+                  type="mesh"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="3" mesh="006_vhacdcvx_2" name="006_vhacdcvx_2"
+                  type="mesh"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="3" mesh="006_vhacdcvx_0" name="006_vhacdcvx_0"
+                  type="mesh"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="3" mesh="006_vhacdcvx_3" name="006_vhacdcvx_3"
+                  type="mesh"/>
+
+
+            <geom condim="4" density="2500" friction="10" group="0" mesh="006_stl" name="006_stl" rgba="0 0 0 1"
+                  type="mesh"/>
+            <geom condim="4" density="2500" friction="10" group="0" mesh="hand" name="hand" rgba="1 1 1 1" type="mesh"/>
+        </body>
+
+
+        <geom euler="1.4600257125337046 0.23879225001317397 2.8442400366307474" name="floor" pos="0 0 -0.5"
+              rgba="1 1 1 1" size="2 2 1" type="plane"/>
+        <camera euler="1.4600257125337046 0.23879225001317397 2.8442400366307474" fovy="45" name="camera"
+                pos="0.3545380234718323 -1.0083506107330322 0.9894363880157471"/>
+        <light pos="0 -2 0"/>
+    </worldbody>
+
+
+</mujoco>

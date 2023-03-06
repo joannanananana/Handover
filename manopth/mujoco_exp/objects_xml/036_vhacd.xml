@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<mujoco model="036_vhacd">
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <size nconmax="100" njmax="500"/>
+    <asset>
+        <mesh file="/home/haonan/codes/manopth/mujoco_utils/../grasp_models/036_vhacd/036_vhacdcvx_0.stl"
+              name="036_vhacdcvx_0"/>
+    </asset>
+    <worldbody>
+        <body euler="0 0 0" name="036_vhacd" pos="0 0 0 ">
+            <joint name="036_vhacd_joint" type="free"/>
+            <geom condim="4" density="2500" friction="10" group="3" mesh="036_vhacdcvx_0" name="036_vhacdcvx_0"
+                  type="mesh"/>
+        </body>
+    </worldbody>
+</mujoco>
